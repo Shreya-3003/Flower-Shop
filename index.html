@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Flower Shop</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <meta content="" name="keywords" />
+  <meta content="" name="description" />
+
+  <!-- Google Web Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Open+Sans:wght@400;500;600&family=Petit+Formal+Script&display=swap"
+    rel="stylesheet" />
+
+  <!-- Icon Font Stylesheet -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
+
+  <!-- Libraries Stylesheet -->
+  <link href="lib/animate/animate.min.css" rel="stylesheet" />
+  <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
+
+  <!-- Customized Bootstrap Stylesheet -->
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Template Stylesheet -->
+  <link href="css/style.css" rel="stylesheet" />
+  <style>
+    body{
+      background-color: rgb(245, 188, 123);
+    }
+  </style>
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navBar" id="weddingHome">
+  <!-- Spinner Start -->
+  <div id="spinner"
+    class="show w-100 vh-100 bg-white position-fixed translate-middle top-50 start-50 d-flex align-items-center justify-content-center">
+    <div class="spinner-grow text-primary" role="status"></div>
+  </div>
+  <!-- Spinner End -->
+
+  <!-- Navbar start -->
+  <div class="container-fluid sticky-top px-0">
+    <div class="container-fluid" >
+      <div class="container px-0">
+        <nav class="navbar navbar-expand-xl" id="navBar">
+          <a href="index.html" class="navbar-brand">
+            <img src="images/logo.png" alt="" height="70px" width="70px" />
+          </a>
+          <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarCollapse">
+            <span class="fa fa-bars text-primary"></span>
+          </button>
+          <div class="collapse navbar-collapse py-3" id="navbarCollapse">
+            <div class="navbar-nav mx-auto border-top">
+              <a href="#flowerHome" class="nav-item nav-link ">Home</a>
+              <a href="#flowerAbout" class="nav-item nav-link">About</a>
+              <a href="#flowerGallery" class="nav-item nav-link">Gallery</a>
+              <a href="#flowerContactus" class="nav-item nav-link">Contact Us</a>
+              <a href="logout.php" class="nav-item nav-link">Logout</a>
+              <!-- <a href="#flowerRegistration" class="nav-item nav-link"
+                  >Registration</a
+                > -->
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div>
+  <!-- Navbar End -->
+
+  <!-- Carousel Start -->
+  <section id="flowerHome">
+    <div class="container-fluid carousel-header px-0">
+      <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-bs-target="#carouselId" data-bs-slide-to="0" class="active"></li>
+          <li data-bs-target="#carouselId" data-bs-slide-to="1"></li>
+          <li data-bs-target="#carouselId" data-bs-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+          <div class="carousel-item active">
+            <img src="images/cou1.jpeg" class="img-fluid" alt="Image" />
+            <div class="carousel-caption">
+              <div class="p-3 mx-auto animated zoomIn" style="max-width: 900px">
+                <div class="d-inline-block border-end-0 border-start-0 border-secondary p-2 mb-4"
+                  style="border-style: double">
+                  <h4 class="text-white text-uppercase fw-bold mb-0" style="letter-spacing: 3px">
+                    Flowers that bloom with Love ♡
+                  </h4>
+                </div>
+                <br /><br />
+                <!-- <h1 class="display-1 text-capitalize text-white mb-3">Evelyn <i class="fa fa-heart text-primary"></i> Anthony</h1> -->
+                <div class="d-inline-block border-end-0 border-start-0 border-secondary p-2 mb-5"
+                  style="border-style: double">
+                  <h4 class="text-white text-uppercase fw-bold mb-0" style="letter-spacing: 3px">
+                    Flora Haven: Where Petals Whisper Love in Every Bouquet.
+                  </h4>
+                </div>
+                <!-- <div class="d-flex align-items-center justify-content-center">
+                  <a
+                    class="btn btn-primary btn-primary-outline-0 py-3 px-5"
+                    href="#"
+                    ></a
+                  >
+                </div> -->
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/cou2.jpeg" class="img-fluid" alt="Image" />
+            <div class="carousel-caption">
+              <div class="p-3 mx-auto animated zoomIn" style="max-width: 900px">
+                <div class="d-inline-block border-end-0 border-start-0 border-secondary p-2 mb-4"
+                  style="border-style: double">
+                  <h4 class="text-white text-uppercase fw-bold mb-0" style="letter-spacing: 3px">
+                    Flower that bloom with Love ♡
+                  </h4>
+                </div>
+                <br /><br />
+                <!-- <h1 class="display-1 text-capitalize text-white mb-3">Evelyn <i class="fa fa-heart text-primary"></i> Anthony</h1> -->
+                <div class="d-inline-block border-end-0 border-start-0 border-secondary p-2 mb-5"
+                  style="border-style: double">
+                  <h4 class="text-white text-uppercase fw-bold mb-0" style="letter-spacing: 3px">
+                    Flora Haven: Where Petals Whisper Love in Every Bouquet.
+                  </h4>
+                </div>
+                <!-- <div class="d-flex align-items-center justify-content-center">
+                  <a
+                    class="btn btn-primary btn-primary-outline-0 py-3 px-5"
+                    href="#flowerContactus"
+                    >Contact Us</a
+                  >
+                </div> -->
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/cou3.jpeg" class="img-fluid bg-secondary" alt="Image" />
+            <div class="carousel-caption">
+              <div class="p-3 mx-auto animated zoomIn" style="max-width: 900px">
+                <div class="d-inline-block border-end-0 border-start-0 border-secondary p-2 mb-4"
+                  style="border-style: double">
+                  <h4 class="text-white text-uppercase fw-bold mb-0" style="letter-spacing: 3px">
+                    Flower that bloom with Love ♡
+                  </h4>
+                </div>
+                <br /><br />
+                <!-- <h1 class="display-1 text-capitalize text-white mb-3">Evelyn <i class="fa fa-heart text-primary"></i> Anthony</h1> -->
+                <div class="d-inline-block border-end-0 border-start-0 border-secondary p-2 mb-5"
+                  style="border-style: double">
+                  <h4 class="text-white text-uppercase fw-bold mb-0" style="letter-spacing: 3px">
+                    Flora Haven: Where Petals Whisper Love in Every Bouquet.
+                  </h4>
+                </div>
+                <!-- <div class="d-flex align-items-center justify-content-center">
+                  <a
+                    class="btn btn-primary btn-primary-outline-0 py-3 px-5"
+                    href="#flowerContactus"
+                    >Contact Us</a
+                  >
+                </div> -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselId" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </section>
+  <!-- Carousel End -->
+
+  <!-- Hello! Start -->
+  <div class="container-fluid position-relative py-5" id="weddingAbout">
+    <div class="position-absolute" style="top: -35px; right: 0">
+      <img src="images/tamp-bg-1.png" class="img-fluid" alt="" />
+    </div>
+    <div class="position-absolute" style="top: -10px; left: 0; transform: rotate(150deg)">
+      <img src="images/tamp-bg-1.png" class="img-fluid" alt="" />
+    </div>
+    <div class="container position-relative py-5">
+      <div class="mx-auto text-center mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 800">
+        <h1 class="text-primary display-1">Hello!</h1>
+        <h4 class="text-dark mb-0">
+          Welcome to Flora, where every bloom tells a story of beauty!
+        </h4>
+        <br />
+        <i class="fa fa-heart fa-5x text-primary"></i>
+      </div>
+    </div>
+  </div>
+  <!-- Hello! End -->
+
+  <!-- About Start -->
+  <section id="flowerAbout">
+    <div class="container-fluid position-relative overflow-hidden bg-secondary py-5">
+      <img src="images/bg-flower.png" class="img-fluid position-absolute top-0"
+        style="right: -15px; transform: rotate(270deg); opacity: 0.5" alt="" />
+      <img src="images/bg-flower.png" class="img-fluid position-absolute" style="
+          bottom: 10px;
+          left: -15px;
+          transform: rotate(90deg);
+          opacity: 0.5;
+        " alt="" />
+      <div class="container py-5 position-relative">
+        <div class="row g-5 align-items-center">
+          <div class="col-xl-6 wow fadeIn" data-wow-delay="0.1s">
+            <div class="border-white bg-primary" style="border-style: double">
+              <img src="images/flowerimage1.jpeg" class="img-fluid w-100" alt="" />
+            </div>
+          </div>
+          <div class="col-xl-6">
+            <div class="wow fadeIn" data-wow-delay="0.3s">
+              <h5 class="text-uppercase text-primary fw-bold mb-4">About Us</h5>
+              <h1 class="display-5 text-white mb-4">
+                Step into Flora's embrace, where memories bloom in every petal.
+              </h1>
+              <p class="text-white fs-5 mb-4">
+                At Flora, we are more than a flower shop; we're storytellers of
+                nature's elegance. With a passion for crafting moments of joy
+                and beauty, we curate exquisite bouquets and floral arrangements
+                that speak the language of emotions. Our commitment to quality
+                and creativity ensures that each bloom in our collection is a
+                masterpiece, carefully selected to bring a touch of nature's
+                charm into your life. Whether you're celebrating love,
+                expressing gratitude, or simply indulging in the beauty of
+                flowers, Flora is your trusted partner in turning ordinary
+                moments into extraordinary memories. Join us on this floral
+                journey, where every petal carries a whisper of nature's poetry,
+                and let Flora be a part of your special moments.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- About End -->
+
+  <!-- Client Start -->
+  <div class="container-fluid story position-relative py-5" id="weddingStory">
+    <div class="position-absolute" style="top: -35px; right: 0">
+      <img src="images/tamp-bg-1.png" class="img-fluid" alt="" />
+    </div>
+    <div class="position-absolute" style="top: -15px; left: 0; transform: rotate(150deg)">
+      <img src="images/tamp-bg-1.png" class="img-fluid" alt="" />
+    </div>
+    <div class="container position-relative py-5">
+      <div class="text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">
+        <!-- <h5 class="text-uppercase text-primary fw-bold mb-4"></h5> -->
+        <h1 class="display-4">Our Clients</h1>
+      </div>
+      <div class="story-timeline">
+        <div class="row wow fadeInUp" data-wow-delay="0.2s">
+          <div class="col-md-6 text-end border-0 border-top border-end border-secondary p-4">
+            <div class="d-inline-flex align-items-center h-100">
+              <img src="images/cleint1.jpeg" class="img-fluid img-border" alt="" height="300px" width="400px" />
+            </div>
+          </div>
+          <div class="col-md-6 border-start border-top border-secondary p-4 pe-0">
+            <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4">
+              <h4 class="text-dark mb-2">~ShinShin M.</h4>
+              <p class="m-0 fs-5">
+                Flora exceeded all my expectations when I ordered a bouquet
+                for my sister's birthday. The online ordering process was
+                seamless, and the variety of floral arrangements to choose
+                from was impressive. The real magic, however, happened when
+                the bouquet was delivered. The colors and freshness of the
+                flowers were breathtaking, and the arrangement itself was a
+                work of art. Flora's attention to detail truly made my
+                sister's birthday a memorable and joyous occasion.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row flex-column-reverse flex-md-row wow fadeInUp" data-wow-delay="0.3s">
+          <div class="col-md-6 text-end border-end border-top border-secondary p-4 ps-0">
+            <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4">
+              <h4 class="text-dark mb-2">~Sarah M.</h4>
+              <!--<p
+                  class="text-uppercase text-primary mb-2"
+                  style="letter-spacing: 3px"
+                >
+                  01 Jan 2050
+                </p> -->
+              <p class="m-0 fs-5">
+                During a difficult time, I turned to Flora to help express my
+                sympathy through a floral arrangement. The process was handled
+                with sensitivity, and the staff at Flora showed genuine
+                empathy. The final arrangement was not just a collection of
+                flowers; it was a heartfelt expression of condolences. The
+                choice of blooms and the elegant design brought comfort and
+                beauty to a somber moment, making the grieving process a bit
+                more bearable.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 border-start border-top border-secondary p-4">
+            <div class="d-inline-flex align-items-center h-100">
+              <img src="images/cleint2.webp" class="img-fluid img-border" alt="" height="300px" width="400px" />
+            </div>
+          </div>
+        </div>
+        <div class="row wow fadeInUp" data-wow-delay="0.4s">
+          <div class="col-md-6 text-end border-end border-top border-secondary p-4 ps-0">
+            <div class="d-inline-flex align-items-center h-100">
+              <img src="images/cleint3.webp" class="img-fluid img-border" alt="" height="300px" width="400px" />
+            </div>
+          </div>
+          <div class="col-md-6 border-start border-top border-secondary p-4 pe-0">
+            <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4">
+              <h4 class="text-dark mb-2">~Ava C.</h4>
+              <!-- <p
+                  class="text-uppercase text-primary mb-2"
+                  style="letter-spacing: 3px"
+                >
+                  01 Jan 2050
+                </p> -->
+              <p class="m-0 fs-5">
+                Flora played a pivotal role in making my wedding day truly
+                special. From our initial consultation to the final execution,
+                the team at Flora exhibited a high level of professionalism
+                and creativity. They understood my vision and brought it to
+                life with the most stunning wedding bouquets. The floral
+                arrangements were not just decorations; they were an integral
+                part of the day, adding a touch of magic and romance to the
+                entire event.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row flex-column-reverse flex-md-row wow fadeInUp" data-wow-delay="0.5s">
+          <div class="col-md-6 text-end border border-start-0 border-secondary p-4 ps-0">
+            <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4">
+              <h4 class="text-dark mb-2">~Lily B.</h4>
+              <!-- <p
+                  class="text-uppercase text-primary mb-2"
+                  style="letter-spacing: 3px"
+                >
+                  01 Jan 2050
+                </p> -->
+              <p class="m-0 fs-5">
+                Flora's same-day delivery service saved the day for me. In the
+                midst of anniversary preparations, I realized I had forgotten
+                to order flowers. With a bit of panic, I reached out to Flora,
+                and their team went above and beyond to ensure a beautiful
+                bouquet was delivered promptly. The efficiency of their
+                service was matched only by the quality of the bouquet, making
+                our anniversary celebration truly special.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 border border-end-0 border-secondary p-4">
+            <div class="d-inline-flex align-items-center h-100">
+              <img src="images/cleint4.webp" class="img-fluid img-border" alt="" height="300px" width="400px" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Story End -->
+
+  <!-- Gallery Start -->
+  <section id="flowerGallery">
+    <div class="container-fluid gallery position-relative py-5" id="weddingGallery">
+      <div class="position-absolute" style="top: -95px; right: 0">
+        <img src="images/tamp-bg-1.png" class="img-fluid" alt="" />
+      </div>
+      <div class="position-absolute" style="top: -80px; left: 0; transform: rotate(150deg)">
+        <img src="images/tamp-bg-1.png" class="img-fluid" alt="" />
+      </div>
+      <div class="container position-relative py-5">
+        <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 800px">
+          <h1 class="display-2 text-dark"> Bestselling Flora Collection</h1>
+          <p class="fs-5 text-dark">
+            A captivating showcase of nature's artistry in every bloom.
+          </p>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.2s">
+            <div class="gallery-item">
+              <div class="gallery-img">
+                <img class="img-fluid w-100" src="images/gal1.webp" alt="" />
+                <div class="hover-style"></div>
+                <div class="search-icon">
+                  <a href="images/gal1.webp" data-lightbox="Gallery-1" class="my-auto"><i
+                      class="fas fa-plus btn-primary btn-primary-outline-0 p-3"></i></a>
+                </div>
+              </div>
+              <div class="gallery-overlay bg-light border-secondary border-top-0 p-4" style="border-style: double">
+                <h5>Blonde Sunflower</h5>
+                <!-- <p class="text-dark mb-0">June 28, 2024</p> -->
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.4s">
+            <div class="gallery-item">
+              <div class="gallery-img">
+                <img class="img-fluid w-100" src="images/gal2.jpeg" alt="" />
+                <div class="hover-style"></div>
+                <div class="search-icon">
+                  <a href="images/gal2.jpeg" data-lightbox="Gallery-2" class="my-auto"><i
+                      class="fas fa-plus btn-primary btn-primary-outline-0 p-3"></i></a>
+                </div>
+              </div>
+              <div class="gallery-overlay bg-light border-secondary border-top-0 p-4" style="border-style: double">
+                <h5>Dandelions</h5>
+                <!-- <p class="text-dark mb-0">June 28, 2024</p> -->
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.8s">
+            <div class="gallery-item">
+              <div class="gallery-img">
+                <img class="img-fluid w-100" src="images/gal4.webp" alt="" />
+                <div class="hover-style"></div>
+                <div class="search-icon">
+                  <a href="images/gal4.webp" data-lightbox="Gallery-4" class="my-auto"><i
+                      class="fas fa-plus btn-primary btn-primary-outline-0 p-3"></i></a>
+                </div>
+              </div>
+              <div class="gallery-overlay bg-light border-secondary border-top-0 p-4" style="border-style: double">
+                <h5>chrysanthemums</h5>
+                <!-- <p class="text-dark mb-0">June 28, 2024</p> -->
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.2s">
+            <div class="gallery-item">
+              <div class="gallery-img">
+                <img class="img-fluid w-100" src="images/gal8.webp" alt="" />
+                <div class="hover-style"></div>
+                <div class="search-icon">
+                  <a href="images/gal8.webp" data-lightbox="Gallery-5" class="my-auto"><i
+                      class="fas fa-plus btn-primary btn-primary-outline-0 p-3"></i></a>
+                </div>
+              </div>
+              <div class="gallery-overlay bg-light border-secondary border-top-0 p-4" style="border-style: double">
+                <h5>Red tulips</h5>
+                <!-- <p class="text-dark mb-0">June 28, 2024</p> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Gallery end -->
+
+  <!-- ContactUS Form Start -->
+  <section id="flowerContactus">
+    <div class="container-fluid RSVP-form py-5" id="weddingRsvp">
+      <div class="container py-5">
+        <div class="mb-5 text-center mx-auto wow fadeIn" data-wow-delay="0.1s" style="max-width: 800px">
+          <h1 class="display-2 text-primary">Contact Form</h1>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-10">
+            <div class="p-5 border-secondary position-relative" style="border-style: double">
+              <div
+                class="fw-bold text-primary bg-white d-flex align-items-center justify-content-center position-absolute border-secondary p-2 wow fadeIn"
+                data-wow-delay="0.1s" style="
+                  width: 75%;
+                  border-style: double;
+                  top: 0;
+                  left: 50%;
+                  transform: translate(-50%, -50%);
+                ">
+                Contact us to bloom your moments – Flora's team awaits your
+                message.
+              </div>
+              <form action="contactus.php" method="post">
+                <div class="row gx-4 gy-3">
+                  <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="form-group">
+                      <label for="Examplename" class="form-label text-dark">First Name</label>
+                      <input type="text" class="form-control py-3 border-0 text-dark" id="Examplename" name="fname"
+                        placeholder="First Name" required/>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="form-group">
+                      <label for="Examplename" class="form-label text-dark">Last Name</label>
+                      <input type="text" class="form-control py-3 border-0 text-dark" id="Examplename" name="lname"
+                        placeholder="Last Name" required />
+                    </div>
+                  </div>
+                  <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="form-group">
+                      <label for="Examplename" class="form-label text-dark">Enter Your Email</label>
+                      <input type="email" class="form-control py-3 border-0 text-dark" id="Examplename" name="email"
+                        placeholder="Enter Your Email" required />
+                    </div>
+                  </div>
+                  <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="form-group">
+                      <label for="Examplename" class="form-label text-dark">Enter Your Phone</label>
+                      <input type="text" class="form-control py-3 border-0 text-dark" id="Examplename" name="phone"
+                        placeholder="Enter Your Phone" required/>
+                    </div>
+                  </div>
+                  <div class="col-12 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="form-group">
+                      <label for="exampleselect" class="form-label text-dark">Number Of Flower Bouquets</label>
+                      <select class="form-control bg-white text-dark py-3 border-0" id="exampleselect"
+                        name="flowerbouquet" placeholder="Number Of Flower Bouquets" required>
+                        <option>01</option>
+                        <option>02</option>
+                        <option>03</option>
+                        <option>04</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-12 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="form-group">
+                      <label for="exampletextarea" class="form-label text-dark">Message</label>
+                      <textarea name="text" class="form-control border-0 text-dark" id="exampletextarea" cols="30"
+                        rows="5" placeholder="Message" required></textarea>
+                    </div>
+                  </div>
+
+                  <div class="col-12 text-center wow fadeIn" data-wow-delay="0.1s">
+                    <button class="btn btn-primary btn-primary-outline-0 py-3 px-5">
+                      Submit Now
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="mt-5">
+          <div class="row g-5 justify-content-center text-center">
+            <div class="col-md-4 wow fadeIn" data-wow-delay="0.1s">
+              <div class="p-4 border-secondary" style="border-style: double">
+                <h4>Call Us Now</h4>
+                <a href="#" class="text-dark">+123 456 7890</a>
+              </div>
+            </div>
+            <div class="col-md-4 wow fadeIn" data-wow-delay="0.3s">
+              <div class="p-4 border-secondary" style="border-style: double">
+                <h4>Timing</h4>
+                <p class="mb-0 text-dark">From 8:00 Am To 8:00 PM</p>
+              </div>
+            </div>
+            <div class="col-md-4 wow fadeIn" data-wow-delay="0.5s">
+              <div class="p-4 border-secondary" style="border-style: double">
+                <h4>Where</h4>
+                <p class="mb-0 text-dark">
+                  Shop no.101,Star Villa,Mumbai-Maharashtra.
+                </p>
+              </div>
+            </div>
+            <div class="col-12 wow fadeIn" data-wow-delay="0.2s">
+              <div class="border-secondary" style="border-style: double">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30137.295444516418!2d72.82510435518842!3d19.231773298301427!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b128b333e163%3A0x985640540577af7e!2sBorivali%2C%20Mumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1703685414360!5m2!1sen!2sin"
+                  width="900px" height="450px" style="border: 0" allowfullscreen="" loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- contactus Form End -->
+
+  <!-- Footer Start -->
+  <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.1s">
+    <div class="container py-5">
+      <div class="row g-5 justify-content-center">
+        <div class="col-lg-4 text-start">
+          <div class="footer-item d-flex flex-column">
+            <h4 class="mb-4 text-white">Links</h4>
+            <a href="#flowerAbout" class="btn-link"> About</a>
+            <a href="#flowerGallery" class="btn-link"> Gallery</a>
+
+            <a href="#flowerContactus" class="btn-link"> Contact Us</a>
+          </div>
+        </div>
+        <div class="col-lg-4 text-center">
+          <div class="footer-item">
+            <p class="text-white">
+              Flora Shop stands as a testament to the enduring beauty of
+              nature. With an unwavering commitment to excellence, we've woven
+              moments of joy and elegance into the tapestry of countless
+              lives. As we bloom forward, we extend heartfelt gratitude to our
+              cherished patrons for making every petal of this journey
+              extraordinary.
+            </p>
+            <div class="btn-link d-flex justify-content-center">
+              <a href="https://www.facebook.com/" class="btn btn-md-square btn-light btn-light-outline-0 me-2"><i
+                  class="fab fa-facebook-f"></i></a>
+              <a href="https://twitter.com/?lang=en-in" class="btn btn-md-square btn-light btn-light-outline-0 me-2"><i
+                  class="fab fa-twitter"></i></a>
+              <a href="https://www.instagram.com/?hl=en" class="btn btn-md-square btn-light btn-light-outline-0 me-2"><i
+                  class="fab fa-instagram"></i></a>
+              <a href="https://www.linkedin.com/" class="btn btn-md-square btn-light btn-light-outline-0 me-0"><i
+                  class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 text-end">
+          <div class="footer-item d-flex flex-column">
+            <h4 class="mb-4 text-white">Follow Us</h4>
+            <a href="https://www.facebook.com/" class="btn-link">
+              Faceboock</a>
+            <a href="https://www.instagram.com/?hl=en" class="btn-link">
+              Instagram</a>
+            <a href="https://twitter.com/?lang=en-in" class="btn-link">
+              Twitter</a>
+            <h4 class="my-4 text-white">Contact Us</h4>
+            <a href="#" class="btn-link"><i class="fas fa-envelope text-secondary me-2"></i>
+              info@example.com</a>
+            <a href="#" class="btn-link"><i class="fas fa-phone text-secondary me-2"></i> (+012) 3456
+              7890 123</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Footer End -->
+
+  <!-- Copyright Start -->
+  <div class="container-fluid copyright py-4">
+    <div class="container">
+      <div class="row g-4 align-items-center">
+        <div class="col-md-6 text-center text-md-start mb-md-0">
+          <span class="text-light"><a href="#"><i class="fas fa-copyright text-light me-2"></i>Flora Shop</a>, All
+            right
+            reserved.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Copyright End -->
+
+  <!-- Back to Top -->
+  <a href="#flowerHome" class="btn btn-primary btn-primary-outline-0 btn-md-square back-to-top"><i
+      class="fa fa-arrow-up"></i></a>
+
+  <!-- JavaScript Libraries -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/waypoints/waypoints.min.js"></script>
+  <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+  <!-- Template Javascript -->
+  <script src="js/main.js"></script>
+</body>
+
+</html>
